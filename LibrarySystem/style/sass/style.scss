@@ -1,0 +1,67 @@
+$primaryFont: 'Spartan';
+$secondaryFont: 'Poppins';
+
+//-- General Style
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    padding: 10px;
+}
+
+.right{
+    float: right;
+}
+
+.left{
+    float: left;
+}
+
+//-- Style for Header
+header{
+    overflow: hidden;
+    padding: 10px 10px;
+    background-color: black;
+
+    .container{
+        padding: 0 16px;
+        display: flex;
+
+        #titlePage{
+            width: 70%;
+            float: left;
+
+            h1{
+                font-family: $primaryFont;
+                color: white;
+                text-align: center;
+            }
+        }
+
+        #buttons{
+            width: 30%;
+            float: left;
+            margin: auto;
+
+            a{
+                float: left;
+                display: block;
+                font-family: $secondaryFont;
+                color: white;
+                text-align: center;
+                text-decoration: none;
+                padding: 14px 16px;
+            }
+        }
+    }
+}
