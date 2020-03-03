@@ -1,5 +1,38 @@
-$primaryFont: 'Spartan';
-$secondaryFont: 'Poppins';
+//--Fonts
+@font-face{
+    font-family: 'Spartan';
+    src: url('../../assets/fonts/Spartan/Spartan-VariableFont_wght.ttf');
+    src: url('../../assets/fonts/Spartan/static/Spartan-Black.ttf');
+    src: url('../../assets/fonts/Spartan/static/Spartan-Bold.ttf');
+    src: url('../../assets/fonts/Spartan/static/Spartan-ExtraBold.ttf');
+    src: url('../../assets/fonts/Spartan/static/Spartan-ExtraLight.ttf');
+    src: url('../../assets/fonts/Spartan/static/Spartan-Light.ttf');
+    src: url('../../assets/fonts/Spartan/static/Spartan-Medium.ttf');
+    src: url('../../assets/fonts/Spartan/static/Spartan-Regular.ttf');
+    src: url('../../assets/fonts/Spartan/static/Spartan-SemiBold.ttf');
+    src: url('../../assets/fonts/Spartan/static/Spartan-Thin.ttf');
+    
+}
+
+@font-face{
+    font-family: 'Poppins';
+    src: url('../../assets/fonts/Poppins/Poppins-Black.ttf');
+    src: url('../../assets/fonts/Poppins/Poppins-BlackItalic.ttf');
+    src: url('../../assets/fonts/Poppins/Poppins-Bold.ttf');
+    src: url('../../assets/fonts/Poppins/Poppins-BoldItalic.ttf');
+    src: url('../../assets/fonts/Poppins/Poppins-ExtraBold.ttf');
+    src: url('../../assets/fonts/Poppins/Poppins-ExtraBoldItalic.ttf');
+    src: url('../../assets/fonts/Poppins/Poppins-ExtraLight.ttf');
+    src: url('../../assets/fonts/Poppins/Poppins-ExtraLightItalic.ttf');
+    src: url('../../assets/fonts/Poppins/Poppins-Italic.ttf');
+    src: url('../../assets/fonts/Poppins/Poppins-Medium.ttf');
+    src: url('../../assets/fonts/Poppins/Poppins-MediumItalic.ttf');
+    src: url('../../assets/fonts/Poppins/Poppins-Regular.ttf');
+    src: url('../../assets/fonts/Poppins/Poppins-SemiBold.ttf');
+    src: url('../../assets/fonts/Poppins/Poppins-SemiBoldItalic.ttf');
+    src: url('../../assets/fonts/Poppins/Poppins-Thin.ttf');
+    src: url('../../assets/fonts/Poppins/Poppins-ThinItalic.ttf');
+}
 
 //-- General Style
 *{
@@ -13,6 +46,9 @@ html{
 body{
     margin: 0;
     padding: 0;
+    background-image: url("../../assets/images/background.JPG");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .container{
@@ -25,43 +61,4 @@ body{
 
 .left{
     float: left;
-}
-
-//-- Style for Header
-header{
-    overflow: hidden;
-    padding: 10px 10px;
-    background-color: black;
-
-    .container{
-        padding: 0 16px;
-        display: flex;
-
-        #titlePage{
-            width: 70%;
-            float: left;
-
-            h1{
-                font-family: $primaryFont;
-                color: white;
-                text-align: center;
-            }
-        }
-
-        #buttons{
-            width: 30%;
-            float: left;
-            margin: auto;
-
-            a{
-                float: left;
-                display: block;
-                font-family: $secondaryFont;
-                color: white;
-                text-align: center;
-                text-decoration: none;
-                padding: 14px 16px;
-            }
-        }
-    }
 }

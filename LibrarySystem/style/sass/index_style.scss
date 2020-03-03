@@ -1,0 +1,118 @@
+$primaryFont: 'Spartan';
+$secondaryFont: 'Poppins';
+
+//-- Style for Header
+header{
+    overflow: hidden;
+    padding: 10px 10px;
+    background-color: black;
+
+    .container{
+        padding: 0 16px;
+        display: flex;
+
+        #titlePage{
+            width: 70%;
+            float: left;
+
+            h1{
+                font-family: $primaryFont;
+                color: white;
+                text-align: center;
+            }
+        }
+
+        #buttons{
+            width: 30%;
+            float: left;
+            margin: auto;
+
+            a{
+                float: left;
+                display: block;
+                font-family: $primaryFont;
+                color: white;
+                text-align: center;
+                text-decoration: none;
+                padding: 14px 16px;
+            }
+        }
+    }
+}
+
+//--Style for div-container
+.container{
+    overflow: hidden;
+
+    .top{
+        overflow: hidden;
+        margin: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+
+        #searchBar{
+            margin: auto;
+            
+            h2{
+                text-align: center;
+                font-family: $primaryFont;
+                
+            }
+            form{
+                margin: auto;
+            }
+        }
+    }
+
+    .left{
+        width: 50%;
+        float: left;
+
+        #checkBooks{
+            margin: 10px;
+            padding-left: 20px;
+            padding-right: 20px;
+            border-right: whitesmoke 2px solid;
+
+            p{
+                font-family: $secondaryFont;
+                font-weight: bold;
+            }
+
+            a{
+                font-family: $primaryFont;
+                text-decoration: none;
+                color: black;
+            }
+        }
+    }
+
+    .right{
+        width: 50%;
+        float: left;
+
+        #checkBeverages{
+            margin: 10px;
+            padding-left: 20px;
+            padding-right: 20px;
+            border-left: whitesmoke 2px solid;
+
+            p{
+                font-family: $secondaryFont;
+                font-weight: bold;
+            }
+
+            a{
+                font-family: $primaryFont;
+                text-decoration: none;
+                color: black;
+            }
+        }
+
+    }
+}
+
+//--Style for footer
+footer{
+    background-color: whitesmoke;
+}

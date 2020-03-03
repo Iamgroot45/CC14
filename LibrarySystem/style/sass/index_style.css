@@ -1,0 +1,114 @@
+header {
+  overflow: hidden;
+  padding: 10px 10px;
+  background-color: black;
+}
+
+header .container {
+  padding: 0 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .container #titlePage {
+  width: 70%;
+  float: left;
+}
+
+header .container #titlePage h1 {
+  font-family: "Spartan";
+  color: white;
+  text-align: center;
+}
+
+header .container #buttons {
+  width: 30%;
+  float: left;
+  margin: auto;
+}
+
+header .container #buttons a {
+  float: left;
+  display: block;
+  font-family: "Spartan";
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  padding: 14px 16px;
+}
+
+.container {
+  overflow: hidden;
+}
+
+.container .top {
+  overflow: hidden;
+  margin: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.container .top #searchBar {
+  margin: auto;
+}
+
+.container .top #searchBar h2 {
+  text-align: center;
+  font-family: "Spartan";
+}
+
+.container .top #searchBar form {
+  margin: auto;
+}
+
+.container .left {
+  width: 50%;
+  float: left;
+}
+
+.container .left #checkBooks {
+  margin: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-right: whitesmoke 2px solid;
+}
+
+.container .left #checkBooks p {
+  font-family: "Poppins";
+  font-weight: bold;
+}
+
+.container .left #checkBooks a {
+  font-family: "Spartan";
+  text-decoration: none;
+  color: black;
+}
+
+.container .right {
+  width: 50%;
+  float: left;
+}
+
+.container .right #checkBeverages {
+  margin: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-left: whitesmoke 2px solid;
+}
+
+.container .right #checkBeverages p {
+  font-family: "Poppins";
+  font-weight: bold;
+}
+
+.container .right #checkBeverages a {
+  font-family: "Spartan";
+  text-decoration: none;
+  color: black;
+}
+
+footer {
+  background-color: whitesmoke;
+}
+/*# sourceMappingURL=index_style.css.map */
