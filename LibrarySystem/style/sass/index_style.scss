@@ -4,7 +4,7 @@ $secondaryFont: 'Poppins';
 //-- Style for Header
 header{
     overflow: hidden;
-    padding: 10px 10px;
+    padding: 5px;
     background-color: black;
 
     .container{
@@ -41,25 +41,46 @@ header{
 }
 
 //--Style for div-container
-.container{
+#main{
     overflow: hidden;
+    margin-top: 20px;
+    margin-bottom: 20px;
 
     .top{
         overflow: hidden;
-        margin: 10px;
+        margin: 30px;
         padding-left: 20px;
         padding-right: 20px;
 
         #searchBar{
-            margin: auto;
+            display: block;
+            text-align: center;
             
             h2{
                 text-align: center;
                 font-family: $primaryFont;
                 
             }
+
             form{
-                margin: auto;
+                input{
+                    width: 50%;
+                    border: none;
+                    height: 45px;
+                    background-image: url('../../assets/icons/search/2x/baseline_search_white_18dp.png');
+                    background-repeat: no-repeat;
+                    background-position: left;
+                }
+
+                input[type=text]{
+                    border-bottom: solid 5px whitesmoke;
+                    background-color: black;
+                    padding-left: 40px;
+                    padding-right: 5px;
+                    padding-top: 5px;
+                    color: whitesmoke;
+                    font-family: $primaryFont;
+                }
             }
         }
     }
@@ -69,19 +90,29 @@ header{
         float: left;
 
         #checkBooks{
-            margin: 10px;
-            padding-left: 20px;
-            padding-right: 20px;
-            border-right: whitesmoke 2px solid;
+            height: 400px;
+            background-color: rgba(88, 109, 115, 0.5);
+            margin: 30px;
+            padding: 20px;
+            border-right: whitesmoke 4px solid;
+            overflow: hidden;
 
             p{
+                margin: 10px;
                 font-family: $secondaryFont;
                 font-weight: bold;
+                letter-spacing: 0.2em;
+            }
+
+            span{
+                font-family: $secondaryFont;
+                margin: 10px;
             }
 
             a{
                 font-family: $primaryFont;
                 text-decoration: none;
+                letter-spacing: 1px;
                 color: black;
             }
         }
@@ -92,19 +123,29 @@ header{
         float: left;
 
         #checkBeverages{
-            margin: 10px;
-            padding-left: 20px;
-            padding-right: 20px;
-            border-left: whitesmoke 2px solid;
+            height: 400px;
+            background-color: rgba(88, 109, 115, 0.5);
+            margin: 30px;
+            padding: 20px;
+            border-left: whitesmoke 4px solid;
+            overflow: hidden;
 
             p{
+                margin: 10px;
                 font-family: $secondaryFont;
                 font-weight: bold;
+                letter-spacing: 0.2em;
+            }
+
+            span{
+                font-family: $secondaryFont;
+                margin: 10px;
             }
 
             a{
                 font-family: $primaryFont;
                 text-decoration: none;
+                letter-spacing: 1px;
                 color: black;
             }
         }
