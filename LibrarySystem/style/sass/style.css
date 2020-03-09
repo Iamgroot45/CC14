@@ -49,6 +49,54 @@ body {
   background-repeat: no-repeat;
 }
 
+header {
+  overflow: hidden;
+  padding: 5px;
+  background-color: black;
+}
+
+header .container {
+  padding: 0 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .container #titlePage {
+  width: 70%;
+  float: left;
+}
+
+header .container #titlePage h1 {
+  font-family: "Spartan";
+  color: white;
+  text-align: center;
+}
+
+header .container #buttons {
+  width: 30%;
+  float: left;
+  margin: auto;
+}
+
+header .container #buttons a {
+  float: left;
+  display: block;
+  font-family: "Spartan";
+  color: whitesmoke;
+  text-align: center;
+  text-decoration: none;
+  padding: 14px 16px;
+  border-bottom: solid 4px transparent;
+  -webkit-transition: border-bottom-color .3s ease-in-out;
+  transition: border-bottom-color .3s ease-in-out;
+}
+
+header .container #buttons a:hover {
+  color: white;
+  border-bottom: solid 4px white;
+}
+
 .container {
   padding: 10px;
 }

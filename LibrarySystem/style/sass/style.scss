@@ -34,6 +34,9 @@
     src: url('../../assets/fonts/Poppins/Poppins-ThinItalic.ttf');
 }
 
+$primaryFont: 'Spartan';
+$secondaryFont: 'Poppins';
+
 //-- General Style
 *{
     box-sizing: border-box;
@@ -51,6 +54,52 @@ body{
     background-repeat: no-repeat;
 }
 
+//-- Style for Header
+header{
+    overflow: hidden;
+    padding: 5px;
+    background-color: black;
+
+    .container{
+        padding: 0 16px;
+        display: flex;
+
+        #titlePage{
+            width: 70%;
+            float: left;
+
+            h1{
+                font-family: $primaryFont;
+                color: white;
+                text-align: center;
+            }
+        }
+
+        #buttons{
+            width: 30%;
+            float: left;
+            margin: auto;
+
+            a{
+                float: left;
+                display: block;
+                font-family: $primaryFont;
+                color: whitesmoke;
+                text-align: center;
+                text-decoration: none;
+                padding: 14px 16px;
+                border-bottom: solid 4px transparent;
+                transition: border-bottom-color .3s ease-in-out;
+            }
+
+            a:hover{
+                color: white;
+                border-bottom: solid 4px white;
+            }
+        }
+    }
+}
+
 .container{
     padding: 10px;
 }
@@ -62,3 +111,5 @@ body{
 .left{
     float: left;
 }
+
+

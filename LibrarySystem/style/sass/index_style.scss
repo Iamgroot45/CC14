@@ -1,45 +1,6 @@
 $primaryFont: 'Spartan';
 $secondaryFont: 'Poppins';
 
-//-- Style for Header
-header{
-    overflow: hidden;
-    padding: 5px;
-    background-color: black;
-
-    .container{
-        padding: 0 16px;
-        display: flex;
-
-        #titlePage{
-            width: 70%;
-            float: left;
-
-            h1{
-                font-family: $primaryFont;
-                color: white;
-                text-align: center;
-            }
-        }
-
-        #buttons{
-            width: 30%;
-            float: left;
-            margin: auto;
-
-            a{
-                float: left;
-                display: block;
-                font-family: $primaryFont;
-                color: white;
-                text-align: center;
-                text-decoration: none;
-                padding: 14px 16px;
-            }
-        }
-    }
-}
-
 //--Style for div-container
 #main{
     overflow: hidden;
@@ -90,8 +51,8 @@ header{
         float: left;
 
         #checkBooks{
-            height: 400px;
-            background-color: rgba(88, 109, 115, 0.5);
+            height: 350px;
+            background-color: rgba(88, 109, 115, 0.4);
             margin: 30px;
             padding: 20px;
             border-right: whitesmoke 4px solid;
@@ -114,6 +75,14 @@ header{
                 text-decoration: none;
                 letter-spacing: 1px;
                 color: black;
+                padding: 14px 16px;
+                border-bottom: solid 4px transparent;
+                transition: border-bottom-color .3s ease-in-out;
+            }
+
+            a:hover{
+                color: darkgrey;
+                border-bottom: solid 4px darkgrey;
             }
         }
     }
@@ -123,8 +92,8 @@ header{
         float: left;
 
         #checkBeverages{
-            height: 400px;
-            background-color: rgba(88, 109, 115, 0.5);
+            height: 350px;
+            background-color: rgba(88, 109, 115, 0.4);
             margin: 30px;
             padding: 20px;
             border-left: whitesmoke 4px solid;
@@ -147,6 +116,14 @@ header{
                 text-decoration: none;
                 letter-spacing: 1px;
                 color: black;
+                padding: 14px 16px;
+                border-bottom: solid 4px transparent;
+                transition: border-bottom-color .3s ease-in-out;
+            }
+
+            a:hover{
+                color: darkgrey;
+                border-bottom: solid 4px darkgrey;
             }
         }
 
@@ -156,4 +133,46 @@ header{
 //--Style for footer
 footer{
     background-color: whitesmoke;
+    overflow: hidden;
+
+    .container{
+        overflow: hidden;
+        margin: 20px;
+
+        .col{
+            width: 33%;
+            float: left;
+
+            .content{
+                margin: 20px;
+                padding-left: 20px;
+
+                h3{
+                    font-family: $primaryFont;
+                }
+
+                ul{
+                    li{
+                        list-style-type: none;
+                        padding: 14px 16px;
+                        
+                        a{
+                            font-family: $secondaryFont;
+                            font-weight: bolder;
+                            color: black;
+                            text-decoration: none;
+                            padding: 14px 16px;
+                            border-bottom: solid 4px transparent;
+                            transition: border-bottom-color .3s ease-in-out;
+                        }
+            
+                        a:hover{
+                            color: darkgrey;
+                            border-bottom: solid 4px darkgrey;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
