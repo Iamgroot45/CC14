@@ -1,44 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="style/sass/style.css" type="text/css">
+    <!-- <link rel="stylesheet" href="style/sass/style.css" type="text/css">
     <link rel="stylesheet" href="style/sass/index_style.css" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Poppins|Spartan&display=swap" rel="stylesheet">
+    -->
 
-    <title>Library System</title>
+    <title>Baguio Public Library</title>
 </head>
 
 <body>
+    <!-- HEADER -->
     <header>
-        <div class="container">
+        <div class="wrap-content">
             <div id="titlePage">
-                <h1 clas>Baguio Public Library</h1>
+                <h1>Baguio Public Library</h1>
             </div>
     
             <div id="buttons" >
                 <nav>
-                    <a href="">Register</a>
-                    <a href="">Login</a>
+                    <ul>
+                        <li>
+                            <a href="">Register</a>
+                        </li>
+                        <li>
+                            <a href="">Login</a>
+                        </li>
+                    </ul>
                 </nav>
             </div>
         </div>
     </header>
 
-    <div class="container" id="main">
-        <section class="top">
-            <div id="searchBar">
+    <!-- MAIN -->
+    <div id="main" class="wrap-content">
+        <section id="top" class="grid">
+            <div id="searchBar" class="wrap-content">
                 <h2>Search a book.</h2>
+
                 <form action="">
                     <input type="text" placeholder="Enter the title of the book you want to search"/>
                 </form>
             </div>
         </section>
 
-        <section class="left">
-            <div id="checkBooks">
+        <section id="left" class="grid">
+            <div id="checkBooks" class="wrap-content">
+                <div id="libName">
+                    <h2>Baguio City Public Library</h2>
+                </div>
+
                 <div class="quote">
                     <p>
                         “I declare after all there is no enjoyment like reading! 
@@ -48,8 +63,6 @@
                         <br>
                         <br>
                         -- Jane Austen, Pride and Prejudice
-                        <br>
-                        <br>
                     </p>
                 </div> 
 
@@ -59,8 +72,12 @@
             </div>
         </section>
 
-        <section class="right">
-            <div id="checkBeverages">
+        <section id="right" class="grid">
+            <div id="checkBeverages" class="wrap-content">
+                <div id="cafeName">
+                    <h2>Cafe Inayan</h2>
+                </div>
+
                 <div class="quote">
                     <p>
                         "The powers of a persons mind are directly 
@@ -69,8 +86,6 @@
                          <br>
                          <br>
                          -- James MacKintosh
-                         <br>
-                         <br>
                     </p>
                 </div>
 
@@ -81,9 +96,21 @@
         </section>
     </div>
 
+    <!-- FEATURED -->
+    <div id="featured">
+        <section id="featuredBooks" class="grid">
+
+        </section>
+
+        <section id="featuredBeverages" class="grid">
+
+        </section>
+    </div>
+
+    <!-- FOOTER -->
     <footer>
-        <div class="container">
-            <div class="col">
+        <div class="wrap-content">
+            <div id="col-1" class="grid">
                 <div class="content">
                     <h3>About Us</h3>
                     <ul>
@@ -94,7 +121,7 @@
                 </div>
             </div>
 
-            <div class="col">
+            <div id="col-2" class="grid">
                 <div class="content">
                     <h3>FAQs</h3>
                     <ul>
@@ -103,7 +130,7 @@
                 </div>
             </div>
 
-            <div class="col">
+            <div id="col-3" class="grid">
                 <div class="content">
                     <h3>Contact</h3>
                     <ul>
@@ -117,7 +144,7 @@
 
     <script src="/__/firebase/7.10.0/firebase-app.js"></script>
     <script src="/__/firebase/7.10.0/firebase.js"></script>
-    <script src="js/database.js"></script>
+    <script src="js/app.js"></script>
     <script src="/__/firebase/init.js"></script>
 </body>
 </html>
