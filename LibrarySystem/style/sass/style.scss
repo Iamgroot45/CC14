@@ -49,19 +49,33 @@ html{
 body{
     margin: 0;
     padding: 0;
-    background-image: url("../../assets/images/background.JPG");
-    background-size: cover;
-    background-repeat: no-repeat;
+}
+
+h1, h2, h3{
+    font-family: $primaryFont;
+    margin: 0;
+    padding: 1em 0;
+}
+
+p{
+    font-family: $secondaryFont;
+    font-weight: bolder;
+    margin: 0;
+    padding: 1em 0;
+}
+
+.wrap-content{
+    padding: 10px;
+    overflow: hidden;
 }
 
 //-- Style for Header
 header{
     overflow: hidden;
-    padding: 5px;
-    background-color: black;
+    background-color: rgb(31, 31, 31);
 
-    .container{
-        padding: 0 16px;
+    .wrap-content{
+        padding: 0 10px;
         display: flex;
 
         #titlePage{
@@ -70,8 +84,11 @@ header{
 
             h1{
                 font-family: $primaryFont;
+                font-weight: bolder;
+                letter-spacing: 0.1em;
                 color: white;
                 text-align: center;
+                padding: 0.4em;
             }
         }
 
@@ -80,29 +97,43 @@ header{
             float: left;
             margin: auto;
 
-            a{
-                float: left;
-                display: block;
-                font-family: $primaryFont;
-                color: whitesmoke;
-                text-align: center;
-                text-decoration: none;
-                padding: 14px 16px;
-                border-bottom: solid 4px transparent;
-                transition: border-bottom-color .3s ease-in-out;
-            }
+            nav{
+                ul{
+                    padding: 0;
+                    margin: 0;
 
-            a:hover{
-                color: white;
-                border-bottom: solid 4px white;
+                    li{
+                        overflow: hidden;
+                        padding-left: 10px;
+                        float: left;
+
+                        a{
+                            display: block;
+                            font-family: $primaryFont;
+                            font-weight: 600;
+                            letter-spacing: 0.2em;
+                            color: whitesmoke;
+                            text-align: center;
+                            text-decoration: none;
+                            padding: 14px 16px;
+                            border-bottom: solid 4px transparent;
+                            transition: border-bottom-color .3s ease-in-out;
+                            transition: background-color .3s ease-in-out;
+                        }
+            
+                        a:hover{
+                            background-color: whitesmoke;
+                            color: black;
+                            border-bottom: solid 4px white;
+                        }
+                    }
+                }
             }
         }
     }
 }
 
-.container{
-    padding: 10px;
-}
+
 
 .right{
     float: right;

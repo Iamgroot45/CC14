@@ -44,45 +44,74 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background-image: url("../../assets/images/background.JPG");
-  background-size: cover;
-  background-repeat: no-repeat;
+}
+
+h1, h2, h3 {
+  font-family: "Spartan";
+  margin: 0;
+  padding: 1em 0;
+}
+
+p {
+  font-family: "Poppins";
+  font-weight: bolder;
+  margin: 0;
+  padding: 1em 0;
+}
+
+.wrap-content {
+  padding: 10px;
+  overflow: hidden;
 }
 
 header {
   overflow: hidden;
-  padding: 5px;
-  background-color: black;
+  background-color: #1f1f1f;
 }
 
-header .container {
-  padding: 0 16px;
+header .wrap-content {
+  padding: 0 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-header .container #titlePage {
+header .wrap-content #titlePage {
   width: 70%;
   float: left;
 }
 
-header .container #titlePage h1 {
+header .wrap-content #titlePage h1 {
   font-family: "Spartan";
+  font-weight: bolder;
+  letter-spacing: 0.1em;
   color: white;
   text-align: center;
+  padding: 0.4em;
 }
 
-header .container #buttons {
+header .wrap-content #buttons {
   width: 30%;
   float: left;
   margin: auto;
 }
 
-header .container #buttons a {
+header .wrap-content #buttons nav ul {
+  padding: 0;
+  margin: 0;
+}
+
+header .wrap-content #buttons nav ul li {
+  overflow: hidden;
+  padding-left: 10px;
   float: left;
+}
+
+header .wrap-content #buttons nav ul li a {
   display: block;
   font-family: "Spartan";
+  font-weight: 600;
+  letter-spacing: 0.2em;
   color: whitesmoke;
   text-align: center;
   text-decoration: none;
@@ -90,15 +119,14 @@ header .container #buttons a {
   border-bottom: solid 4px transparent;
   -webkit-transition: border-bottom-color .3s ease-in-out;
   transition: border-bottom-color .3s ease-in-out;
+  -webkit-transition: background-color .3s ease-in-out;
+  transition: background-color .3s ease-in-out;
 }
 
-header .container #buttons a:hover {
-  color: white;
+header .wrap-content #buttons nav ul li a:hover {
+  background-color: whitesmoke;
+  color: black;
   border-bottom: solid 4px white;
-}
-
-.container {
-  padding: 10px;
 }
 
 .right {
